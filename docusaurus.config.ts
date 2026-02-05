@@ -35,6 +35,7 @@ const config: Config = {
           editUrl: 'https://github.com/clawpay/clawpay-docs/tree/main/',
         },
         blog: false, // Disable blog for now
+        debug: false, // Avoid missing __plugin.json in .docusaurus
         theme: {
           customCss: './src/css/custom.css',
         },
