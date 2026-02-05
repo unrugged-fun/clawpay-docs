@@ -130,10 +130,6 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/clawpay',
-            },
-            {
               label: 'Twitter',
               href: 'https://twitter.com/clawpay',
             },

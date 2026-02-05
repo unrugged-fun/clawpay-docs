@@ -343,7 +343,7 @@ await governance.propose(targets, values, calldatas, description);
 
 ### For Proposers
 
-1. **Discuss first** - Share proposal in Discord before on-chain
+1. **Discuss first** - Share proposal publicly before on-chain
 2. **Clear description** - Explain motivation and impact
 3. **Small changes** - One change per proposal
 4. **Test on testnet** - Verify calldata works

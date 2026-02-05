@@ -349,7 +349,6 @@ Wait and retry. If persistent:
 ### How do I get help?
 
 1. **Docs:** You're here!
-2. **Discord:** [discord.gg/clawpay](https://discord.gg/clawpay)
 3. **GitHub:** [github.com/clawpay](https://github.com/clawpay)
 4. **Email:** support@clawpay.bot
 

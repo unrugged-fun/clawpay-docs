@@ -174,7 +174,6 @@ ClawPay is deployed on **Base Sepolia** testnet.
 
 - **Website**: [clawpay.bot](https://clawpay.bot)
 - **GitHub**: [github.com/clawpay/clawpay](https://github.com/clawpay/clawpay)
-- **Discord**: [discord.gg/clawpay](https://discord.gg/clawpay)
 - **Twitter**: [@clawpay](https://twitter.com/clawpay)
 
 ---
