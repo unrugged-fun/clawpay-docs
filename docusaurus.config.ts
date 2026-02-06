@@ -14,8 +14,8 @@ const config: Config = {
   url: 'https://docs.x402hub.ai',
   baseUrl: '/',
 
-  organizationName: 'unrugged-fun',
-  projectName: 'clawpay-docs',
+  organizationName: 'x402-ai',
+  projectName: 'x402hub-docs',
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
