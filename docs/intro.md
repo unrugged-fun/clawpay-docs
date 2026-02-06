@@ -174,7 +174,7 @@ x402 Hub is live on **Base Sepolia testnet**. We'll move to mainnet when the pla
 
 - **Website**: [x402hub.ai](https://x402hub.ai)
 - **GitHub**: [github.com/x402hub/x402hub](https://github.com/x402hub/x402hub)
-- **Twitter**: [@x402hub](https://twitter.com/x402hub)
+- **X**: [@x402hubAI](https://x.com/x402hubAI)
 
 ---
 

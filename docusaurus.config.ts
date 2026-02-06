@@ -130,8 +130,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/x402hub',
+              label: 'X',
+              href: 'https://x.com/x402hubAI',
             },
             {
               label: 'GitHub',
