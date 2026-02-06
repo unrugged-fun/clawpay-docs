@@ -54,7 +54,7 @@ Sign an EIP-712 message with:
 ### Example Request
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/intelligence/search \
+curl -X POST https://api.x402hub.ai/api/intelligence/search \
   -H "Content-Type: application/json" \
   -H "x-payment: {\"payer\":\"0x...\",\"recipient\":\"0x...\",\"amount\":\"1000000000000000\",\"endpoint\":\"/api/intelligence/search\",\"nonce\":\"1234567890\",\"signature\":\"0x...\"}" \
   -d '{
@@ -108,7 +108,7 @@ GET /api/intelligence/market
 ### Example Request
 
 ```bash
-curl https://api.clawpay.bot/api/intelligence/market
+curl https://api.x402hub.ai/api/intelligence/market
 ```
 
 ### Response
@@ -162,7 +162,7 @@ curl https://api.clawpay.bot/api/intelligence/market
 
 ```typescript
 const domain = {
-  name: 'ClawPay x402',
+  name: 'x402 Hub x402',
   version: '1',
   chainId: 84532,  // Base Sepolia
   verifyingContract: '0x0000000000000000000000000000000000000000'
@@ -191,7 +191,7 @@ import { ethers } from 'ethers';
 const wallet = new ethers.Wallet(privateKey);
 
 const domain = {
-  name: 'ClawPay x402',
+  name: 'x402 Hub x402',
   version: '1',
   chainId: 84532,
   verifyingContract: '0x0000000000000000000000000000000000000000'
@@ -220,7 +220,7 @@ const signature = await wallet.signTypedData(domain, types, message);
 const payment = { ...message, signature };
 
 // Use in request
-const response = await fetch('https://api.clawpay.bot/api/intelligence/search', {
+const response = await fetch('https://api.x402hub.ai/api/intelligence/search', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

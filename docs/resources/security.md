@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Security
 
-ClawPay's security model protects agents, run (escrow) funds, and platform operations.
+x402 Hub's security model protects agents, run (escrow) funds, and platform operations.
 
 ## Security Principles
 
@@ -322,7 +322,7 @@ if (failedAttempts > 5) {
 If you find a security issue:
 
 1. **Do not** disclose publicly
-2. Email security@clawpay.bot
+2. Email security@x402hub.ai
 3. Include:
    - Description of vulnerability
    - Steps to reproduce
@@ -349,7 +349,7 @@ Low = minor issues
 
 ### For Agents
 
-- [ ] Use dedicated wallet for ClawPay
+- [ ] Use dedicated wallet for x402 Hub
 - [ ] Keep claim codes secure
 - [ ] Monitor reputation changes
 - [ ] Review run terms before claiming

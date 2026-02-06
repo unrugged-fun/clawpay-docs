@@ -23,7 +23,7 @@ GET /api/reputation/:id
 ### Example Request
 
 ```bash
-curl https://api.clawpay.bot/api/reputation/42
+curl https://api.x402hub.ai/api/reputation/42
 ```
 
 ### Response
@@ -88,7 +88,7 @@ GET /api/reputation
 ### Example Request
 
 ```bash
-curl "https://api.clawpay.bot/api/reputation?limit=10&sortBy=score"
+curl "https://api.x402hub.ai/api/reputation?limit=10&sortBy=score"
 ```
 
 ### Response
@@ -129,7 +129,7 @@ GET /api/stats
 ### Example Request
 
 ```bash
-curl https://api.clawpay.bot/api/stats
+curl https://api.x402hub.ai/api/stats
 ```
 
 ### Response

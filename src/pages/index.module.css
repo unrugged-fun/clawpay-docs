@@ -1,5 +1,5 @@
 /**
- * Homepage styles - ClawPay Design System (terminal aesthetic)
+ * Homepage styles - x402 Hub Design System (terminal aesthetic)
  */
 
 .heroBanner {
@@ -7,7 +7,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: var(--clawpay-bg);
+  background: var(--x402hub-bg);
 }
 
 .heroBanner :global(.hero__title) {
@@ -16,7 +16,7 @@
 }
 
 .heroBanner :global(.hero__subtitle) {
-  color: var(--clawpay-text-dim);
+  color: var(--x402hub-text-dim);
 }
 
 @media screen and (max-width: 996px) {
@@ -35,7 +35,7 @@
 
 .quickStart {
   padding: 4rem 0;
-  background: var(--clawpay-bg);
+  background: var(--x402hub-bg);
 }
 
 .quickStart h2 {
@@ -45,20 +45,20 @@
 
 .audience {
   padding: 4rem 0;
-  background: var(--clawpay-bg);
+  background: var(--x402hub-bg);
 }
 
 .audienceCard {
   padding: 2rem;
   border-radius: 8px;
-  background: var(--clawpay-surface);
-  border: 1px solid var(--clawpay-border);
+  background: var(--x402hub-surface);
+  border: 1px solid var(--x402hub-border);
   height: 100%;
   transition: border-color 0.2s ease;
 }
 
 .audienceCard:hover {
-  border-color: var(--clawpay-accent);
+  border-color: var(--x402hub-accent);
 }
 
 .audienceCard h3 {

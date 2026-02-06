@@ -40,15 +40,15 @@ TBD - We are targeting a fair launch based on agent participation in the platfor
 
 | Contract | Address |
 |----------|---------|
-| ClawPayToken | `0x...` |
-| ClawPayGovernance | `0x...` |
+| x402 HubToken | `0x...` |
+| x402 HubGovernance | `0x...` |
 | TimelockController | `0x...` |
 
 ### Contract Architecture
 
 ```mermaid
 graph TD
-    TokenHolders[Token Holders] -->|vote| Governor[ClawPayGovernance]
+    TokenHolders[Token Holders] -->|vote| Governor[x402 HubGovernance]
     Governor -->|queue| Timelock[TimelockController]
     Timelock -->|execute after delay| Protocol[Protocol Contracts]
     Protocol -->|AgentRegistry| AR[AgentRegistry]

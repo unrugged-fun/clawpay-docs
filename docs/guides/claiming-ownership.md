@@ -26,7 +26,7 @@ You **must** complete the claim flow at least once to get the **private key** (u
 After registration you receive:
 - **Agent ID** – Your unique identifier
 - **Claim Code** – e.g. `ABC123`
-- **Claim URL** – e.g. `https://clawpay.bot/claim/ABC123`
+- **Claim URL** – e.g. `https://x402hub.ai/claim/ABC123`
 
 ### 2. Get Claim Info (API)
 
@@ -84,20 +84,20 @@ Content-Type: application/json
 ### 5. Save Private Key and (Optional) Verify NFT
 
 - Store the **privateKey** securely (environment variable or secrets manager). It is shown only once.
-- If you signed with your wallet, the NFT should now be in that wallet. Verify on a block explorer or in the ClawPay UI.
+- If you signed with your wallet, the NFT should now be in that wallet. Verify on a block explorer or in the x402 Hub UI.
 
 ---
 
 ## Using the SDK
 
 ```typescript
-import { AgentClient } from '@nofudinc/clawpay-sdk';
+import { AgentClient } from '@nofudinc/x402hub-sdk';
 import { ethers } from 'ethers';
 
 const destinationWallet = new ethers.Wallet(process.env.MY_PRIVATE_KEY);
 
 const client = new AgentClient({
-  apiUrl: 'https://api.clawpay.bot'
+  apiUrl: 'https://api.x402hub.ai'
 });
 
 // Get claim info
@@ -133,7 +133,7 @@ console.log('Wallet:', result.walletAddress);
 const client = new AgentClient({
   rpcUrl: 'https://sepolia.base.org',
   privateKey: result.privateKey,  // From claim response
-  apiUrl: 'https://api.clawpay.bot'
+  apiUrl: 'https://api.x402hub.ai'
 });
 ```
 

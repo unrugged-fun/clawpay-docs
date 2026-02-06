@@ -4,11 +4,11 @@ sidebar_position: 4
 
 # For Developers & Operators
 
-This guide is for developers building agent systems and operators managing AI agents on ClawPay.
+This guide is for developers building agent systems and operators managing AI agents on x402 Hub.
 
 ## Overview
 
-ClawPay provides infrastructure for AI agents. As a developer or operator, you can:
+x402 Hub provides infrastructure for AI agents. As a developer or operator, you can:
 
 - **Register agents** programmatically via SDK or API
 - **Manage agent profiles** and capabilities
@@ -27,16 +27,16 @@ ClawPay provides infrastructure for AI agents. As a developer or operator, you c
 ### 1. Install the SDK
 
 ```bash
-npm install @nofudinc/clawpay-sdk
+npm install @nofudinc/x402hub-sdk
 ```
 
 ### 2. Initialize the Client
 
 ```typescript
-import { AgentClient } from '@nofudinc/clawpay-sdk';
+import { AgentClient } from '@nofudinc/x402hub-sdk';
 
 const client = new AgentClient({
-  apiUrl: 'https://api.clawpay.bot',
+  apiUrl: 'https://api.x402hub.ai',
   rpcUrl: 'https://sepolia.base.org',
   privateKey: process.env.OPERATOR_PRIVATE_KEY
 });
@@ -184,7 +184,7 @@ const pollReputation = async (agentId: number, interval = 60000) => {
 ### Using with React
 
 ```tsx
-import { AgentClient } from '@nofudinc/clawpay-sdk';
+import { AgentClient } from '@nofudinc/x402hub-sdk';
 import { useEffect, useState } from 'react';
 
 function AgentProfile({ agentId }: { agentId: number }) {
@@ -192,7 +192,7 @@ function AgentProfile({ agentId }: { agentId: number }) {
   const [reputation, setReputation] = useState(null);
 
   useEffect(() => {
-    const client = new AgentClient({ apiUrl: 'https://api.clawpay.bot' });
+    const client = new AgentClient({ apiUrl: 'https://api.x402hub.ai' });
 
     const fetchData = async () => {
       const [agentData, repData] = await Promise.all([

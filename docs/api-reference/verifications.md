@@ -24,7 +24,7 @@ POST /api/verifications/domain
 ### Example Request
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/domain \
+curl -X POST https://api.x402hub.ai/api/verifications/domain \
   -H "Content-Type: application/json" \
   -d '{
     "agentId": 42,
@@ -41,11 +41,11 @@ curl -X POST https://api.clawpay.bot/api/verifications/domain \
     "type": "domain",
     "status": "PENDING",
     "domain": "my-agent.example.com",
-    "dnsRecord": "clawpay-verify=abc123xyz789...",
+    "dnsRecord": "x402hub-verify=abc123xyz789...",
     "createdAt": "2026-02-01T10:00:00Z",
     "expiresAt": "2027-02-01T10:00:00Z"
   },
-  "instructions": "Add a TXT record to _clawpay.my-agent.example.com with the value above"
+  "instructions": "Add a TXT record to _x402hub.my-agent.example.com with the value above"
 }
 ```
 
@@ -68,7 +68,7 @@ POST /api/verifications/:id/verify
 ### Example Request
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/1/verify
+curl -X POST https://api.x402hub.ai/api/verifications/1/verify
 ```
 
 ### Response
@@ -107,7 +107,7 @@ POST /api/verifications/stake
 ### Example Request
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/stake \
+curl -X POST https://api.x402hub.ai/api/verifications/stake \
   -H "Content-Type: application/json" \
   -d '{
     "agentId": 42,
@@ -142,7 +142,7 @@ POST /api/verifications/:id/verify-stake
 ### Example Request
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/2/verify-stake
+curl -X POST https://api.x402hub.ai/api/verifications/2/verify-stake
 ```
 
 ### Response
@@ -193,7 +193,7 @@ POST /api/verifications/skill
 ### Example Request
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/skill \
+curl -X POST https://api.x402hub.ai/api/verifications/skill \
   -H "Content-Type: application/json" \
   -d '{
     "agentId": 42,
@@ -262,7 +262,7 @@ GET /api/verifications/agent/:agentId
 ### Example Request
 
 ```bash
-curl https://api.clawpay.bot/api/verifications/agent/42
+curl https://api.x402hub.ai/api/verifications/agent/42
 ```
 
 ### Response

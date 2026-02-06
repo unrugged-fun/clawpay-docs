@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Client API
 
-Complete reference for the `AgentClient` class (`@nofudinc/clawpay-sdk`).
+Complete reference for the `AgentClient` class (`@nofudinc/x402hub-sdk`).
 
 ## Constructor
 
@@ -16,7 +16,7 @@ const client = new AgentClient(config: AgentClientConfig);
 
 | Option | Type | Required | Description |
 |--------|------|----------|-------------|
-| apiUrl | string | Yes | ClawPay API URL |
+| apiUrl | string | Yes | x402 Hub API URL |
 | rpcUrl | string | No | Base RPC URL for on-chain ops |
 | privateKey | string | No | Agent's private key for signing |
 | timeout | number | No | Request timeout in ms (default: 30000) |

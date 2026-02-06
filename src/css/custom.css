@@ -1,36 +1,36 @@
 /**
- * ClawPay Design System - "Homebrew Terminal" aesthetic
- * Applied to Docusaurus docs to match clawpay.bot
- * @see # ClawPay Design System.md
+ * x402 Hub Design System - "Homebrew Terminal" aesthetic
+ * Applied to Docusaurus docs to match x402hub.ai
+ * @see # x402 Hub Design System.md
  */
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 /* ========== Design system tokens (dark = default) ========== */
 :root {
-  --clawpay-bg: #000000;
-  --clawpay-surface: #0a0a0a;
-  --clawpay-border: #1a1a1a;
-  --clawpay-text: #28FE14;
-  --clawpay-text-dim: #1a9e0a;
-  --clawpay-accent: #38FE27;
-  --clawpay-red: #C33720;
-  --clawpay-yellow: #AFAD24;
-  --clawpay-blue: #532FE1;
-  --clawpay-cyan: #34BBC8;
+  --x402hub-bg: #000000;
+  --x402hub-surface: #0a0a0a;
+  --x402hub-border: #1a1a1a;
+  --x402hub-text: #28FE14;
+  --x402hub-text-dim: #1a9e0a;
+  --x402hub-accent: #38FE27;
+  --x402hub-red: #C33720;
+  --x402hub-yellow: #AFAD24;
+  --x402hub-blue: #532FE1;
+  --x402hub-cyan: #34BBC8;
 }
 
 [data-theme='light'] {
-  --clawpay-bg: #FAFAFA;
-  --clawpay-surface: #FFFFFF;
-  --clawpay-border: #E5E5E5;
-  --clawpay-text: #383A42;
-  --clawpay-text-dim: #6B7280;
-  --clawpay-accent: #50A14F;
-  --clawpay-red: #E45649;
-  --clawpay-yellow: #C18401;
-  --clawpay-blue: #4078F2;
-  --clawpay-cyan: #0184BC;
+  --x402hub-bg: #FAFAFA;
+  --x402hub-surface: #FFFFFF;
+  --x402hub-border: #E5E5E5;
+  --x402hub-text: #383A42;
+  --x402hub-text-dim: #6B7280;
+  --x402hub-accent: #50A14F;
+  --x402hub-red: #E45649;
+  --x402hub-yellow: #C18401;
+  --x402hub-blue: #4078F2;
+  --x402hub-cyan: #0184BC;
 }
 
 /* ========== Map to Docusaurus/Infima ========== */
@@ -42,14 +42,14 @@
   --ifm-color-primary-light: #5afe3a;
   --ifm-color-primary-lighter: #6afe4a;
   --ifm-color-primary-lightest: #8afe6d;
-  --ifm-font-color-base: var(--clawpay-text);
-  --ifm-font-color-secondary: var(--clawpay-text-dim);
-  --ifm-background-color: var(--clawpay-bg);
-  --ifm-background-surface-color: var(--clawpay-surface);
-  --ifm-link-color: var(--clawpay-accent);
-  --ifm-link-hover-color: var(--clawpay-accent);
-  --ifm-navbar-background-color: var(--clawpay-surface);
-  --ifm-footer-background-color: var(--clawpay-surface);
+  --ifm-font-color-base: var(--x402hub-text);
+  --ifm-font-color-secondary: var(--x402hub-text-dim);
+  --ifm-background-color: var(--x402hub-bg);
+  --ifm-background-surface-color: var(--x402hub-surface);
+  --ifm-link-color: var(--x402hub-accent);
+  --ifm-link-hover-color: var(--x402hub-accent);
+  --ifm-navbar-background-color: var(--x402hub-surface);
+  --ifm-footer-background-color: var(--x402hub-surface);
   --ifm-font-family-base: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', monospace;
   --ifm-font-family-monospace: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', monospace;
   --ifm-code-font-size: 95%;
@@ -65,10 +65,10 @@
   --ifm-color-emphasis-800: #38FE27;
   --ifm-color-emphasis-900: #28FE14;
   --ifm-color-emphasis-1000: #38FE27;
-  --ifm-toc-border-color: var(--clawpay-border);
-  --ifm-menu-color-background-active: var(--clawpay-border);
-  --ifm-pre-background: var(--clawpay-surface);
-  --ifm-code-background: var(--clawpay-surface);
+  --ifm-toc-border-color: var(--x402hub-border);
+  --ifm-menu-color-background-active: var(--x402hub-border);
+  --ifm-pre-background: var(--x402hub-surface);
+  --ifm-code-background: var(--x402hub-surface);
   --docusaurus-highlighted-code-line-bg: rgba(56, 254, 39, 0.12);
 }
 
@@ -102,16 +102,16 @@ body {
 
 /* ========== Hero (homepage) ========== */
 .hero--primary {
-  background: var(--clawpay-bg);
-  color: var(--clawpay-text);
+  background: var(--x402hub-bg);
+  color: var(--x402hub-text);
 }
 
 .hero--primary .hero__title {
-  color: var(--clawpay-text);
+  color: var(--x402hub-text);
 }
 
 .hero--primary .hero__subtitle {
-  color: var(--clawpay-text-dim);
+  color: var(--x402hub-text-dim);
 }
 
 /* ========== Navbar: terminal-style bar ========== */
@@ -124,7 +124,7 @@ body {
 }
 
 .navbar {
-  border-bottom: 1px solid var(--clawpay-border);
+  border-bottom: 1px solid var(--x402hub-border);
   box-shadow: none;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 .navbar__link--active {
-  color: var(--clawpay-accent);
+  color: var(--x402hub-accent);
 }
 
 /* Logo area: prompt-style like main site */
@@ -148,11 +148,11 @@ body {
 }
 
 .menu__link--active {
-  color: var(--clawpay-accent);
+  color: var(--x402hub-accent);
 }
 
 .menu__link--active:not(.menu__link--sublist) {
-  border-left: 2px solid var(--clawpay-accent);
+  border-left: 2px solid var(--x402hub-accent);
 }
 
 /* ========== Doc content ========== */
@@ -169,58 +169,58 @@ body {
 }
 
 .markdown a {
-  color: var(--clawpay-accent);
+  color: var(--x402hub-accent);
 }
 
 .markdown a:hover {
-  color: var(--clawpay-accent);
+  color: var(--x402hub-accent);
   opacity: 0.9;
 }
 
 /* ========== Code blocks: terminal window feel ========== */
 .prism-code {
-  background: var(--clawpay-surface) !important;
-  border: 1px solid var(--clawpay-border);
+  background: var(--x402hub-surface) !important;
+  border: 1px solid var(--x402hub-border);
   border-radius: var(--ifm-global-radius);
 }
 
 div[class*='codeBlockTitle'] {
-  background: var(--clawpay-border);
-  color: var(--clawpay-text-dim);
+  background: var(--x402hub-border);
+  color: var(--x402hub-text-dim);
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.75rem;
   padding: 8px 12px;
-  border-bottom: 1px solid var(--clawpay-border);
+  border-bottom: 1px solid var(--x402hub-border);
 }
 
 /* ========== Buttons ========== */
 .button--primary {
-  background: var(--clawpay-accent);
+  background: var(--x402hub-accent);
   color: #000;
   border: none;
 }
 
 .button--primary:hover {
-  background: var(--clawpay-accent);
+  background: var(--x402hub-accent);
   color: #000;
   opacity: 0.9;
 }
 
 .button--secondary {
-  border-color: var(--clawpay-border);
-  color: var(--clawpay-text);
+  border-color: var(--x402hub-border);
+  color: var(--x402hub-text);
 }
 
 .button--secondary:hover {
-  border-color: var(--clawpay-accent);
-  color: var(--clawpay-accent);
+  border-color: var(--x402hub-accent);
+  color: var(--x402hub-accent);
 }
 
 /* ========== Footer ========== */
 .footer {
-  border-top: 1px solid var(--clawpay-border);
-  background-color: var(--clawpay-surface);
-  color: var(--clawpay-text-dim);
+  border-top: 1px solid var(--x402hub-border);
+  background-color: var(--x402hub-surface);
+  color: var(--x402hub-text-dim);
 }
 
 [data-theme='light'] .footer {
@@ -244,23 +244,23 @@ div[class*='codeBlockTitle'] {
 }
 
 .footer__link-item:hover {
-  color: var(--clawpay-text);
+  color: var(--x402hub-text);
 }
 
 .footer__title {
-  color: var(--clawpay-text);
+  color: var(--x402hub-text);
 }
 
 /* ========== Terminal window component classes (for docs/homepage) ========== */
 .terminal-window {
-  background-color: var(--clawpay-surface);
-  border: 1px solid var(--clawpay-border);
+  background-color: var(--x402hub-surface);
+  border: 1px solid var(--x402hub-border);
   border-radius: var(--ifm-global-radius);
   overflow: hidden;
 }
 
 .terminal-header {
-  background-color: var(--clawpay-border);
+  background-color: var(--x402hub-border);
   padding: 8px 12px;
   display: flex;
   align-items: center;
@@ -282,12 +282,12 @@ div[class*='codeBlockTitle'] {
   display: inline-block;
   width: 0.6em;
   height: 1.2em;
-  background-color: var(--clawpay-text);
-  animation: clawpay-blink 1s step-end infinite;
+  background-color: var(--x402hub-text);
+  animation: x402hub-blink 1s step-end infinite;
   vertical-align: text-bottom;
 }
 
-@keyframes clawpay-blink {
+@keyframes x402hub-blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
@@ -299,16 +299,16 @@ div[class*='codeBlockTitle'] {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--clawpay-bg);
+  background: var(--x402hub-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--clawpay-border);
+  background: var(--x402hub-border);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--clawpay-text-dim);
+  background: var(--x402hub-text-dim);
 }
 
 /* ========== Table of contents ========== */
@@ -317,51 +317,51 @@ div[class*='codeBlockTitle'] {
 }
 
 .table-of-contents__link--active {
-  color: var(--clawpay-accent);
+  color: var(--x402hub-accent);
 }
 
 /* ========== Breadcrumbs ========== */
 .breadcrumbs__link {
-  color: var(--clawpay-text-dim);
+  color: var(--x402hub-text-dim);
 }
 
 .breadcrumbs__link:hover {
-  color: var(--clawpay-accent);
+  color: var(--x402hub-accent);
 }
 
 /* ========== Admonitions (notes, tips, etc.) ========== */
 .alert {
   border-radius: var(--ifm-global-radius);
-  border: 1px solid var(--clawpay-border);
+  border: 1px solid var(--x402hub-border);
 }
 
 .alert--info {
-  --ifm-alert-background-color: var(--clawpay-surface);
-  --ifm-alert-border-color: var(--clawpay-blue);
+  --ifm-alert-background-color: var(--x402hub-surface);
+  --ifm-alert-border-color: var(--x402hub-blue);
 }
 
 .alert--warning {
-  --ifm-alert-background-color: var(--clawpay-surface);
-  --ifm-alert-border-color: var(--clawpay-yellow);
+  --ifm-alert-background-color: var(--x402hub-surface);
+  --ifm-alert-border-color: var(--x402hub-yellow);
 }
 
 .alert--danger {
-  --ifm-alert-background-color: var(--clawpay-surface);
-  --ifm-alert-border-color: var(--clawpay-red);
+  --ifm-alert-background-color: var(--x402hub-surface);
+  --ifm-alert-border-color: var(--x402hub-red);
 }
 
 .alert--success {
-  --ifm-alert-background-color: var(--clawpay-surface);
-  --ifm-alert-border-color: var(--clawpay-accent);
+  --ifm-alert-background-color: var(--x402hub-surface);
+  --ifm-alert-border-color: var(--x402hub-accent);
 }
 
 /* ========== Pagination ========== */
 .pagination-nav__link {
-  border-color: var(--clawpay-border);
+  border-color: var(--x402hub-border);
 }
 
 .pagination-nav__link:hover {
-  border-color: var(--clawpay-accent);
+  border-color: var(--x402hub-accent);
 }
 
 /* ========== Color mode ========== */

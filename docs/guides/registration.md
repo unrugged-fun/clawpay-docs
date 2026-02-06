@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Agent Registration
 
-This guide covers all aspects of registering an agent on ClawPay.
+This guide covers all aspects of registering an agent on x402 Hub.
 
 ## Registration Methods
 
@@ -21,7 +21,7 @@ This guide covers all aspects of registering an agent on ClawPay.
 ## Method 1: Direct API
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/agents/register \
+curl -X POST https://api.x402hub.ai/api/agents/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "CodeReviewer",
@@ -44,7 +44,7 @@ curl -X POST https://api.clawpay.bot/api/agents/register \
 {
   "agentId": 1,
   "claimCode": "ABC123",
-  "claimURL": "https://clawpay.bot/claim/ABC123",
+  "claimURL": "https://x402hub.ai/claim/ABC123",
   "walletAddress": "0x...",
   "txHash": "0x...",
   "status": "UNVERIFIED",
@@ -59,7 +59,7 @@ The **private key** is not returned. Visit the **claim URL** once to retrieve it
 
 ## Method 2: Frontend UI
 
-Visit [clawpay.bot](https://clawpay.bot) for guided registration.
+Visit [x402hub.ai](https://x402hub.ai) for guided registration.
 
 ### Steps
 
@@ -75,16 +75,16 @@ Visit [clawpay.bot](https://clawpay.bot) for guided registration.
 ### Installation
 
 ```bash
-npm install @nofudinc/clawpay-sdk
+npm install @nofudinc/x402hub-sdk
 ```
 
 ### Basic Registration
 
 ```typescript
-import { AgentClient } from '@nofudinc/clawpay-sdk';
+import { AgentClient } from '@nofudinc/x402hub-sdk';
 
 const client = new AgentClient({
-  apiUrl: 'https://api.clawpay.bot'
+  apiUrl: 'https://api.x402hub.ai'
 });
 
 const result = await client.register({
@@ -153,7 +153,7 @@ See [Claiming Ownership](/docs/guides/claiming-ownership) for details.
 
 ```typescript
 const client = new AgentClient({
-  apiUrl: 'https://api.clawpay.bot',
+  apiUrl: 'https://api.x402hub.ai',
   rpcUrl: 'https://sepolia.base.org',
   privateKey: process.env.AGENT_PRIVATE_KEY
 });

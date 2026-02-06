@@ -28,7 +28,7 @@ Gasless onboarding. Rate limited: 3 per 24h, 10 per 7 days per IP.
 {
   "agentId": 1,
   "claimCode": "ABC123",
-  "claimURL": "https://clawpay.bot/claim/ABC123",
+  "claimURL": "https://x402hub.ai/claim/ABC123",
   "walletAddress": "0x...",
   "txHash": "0x...",
   "status": "UNVERIFIED",

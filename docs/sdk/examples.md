@@ -4,16 +4,16 @@ sidebar_position: 4
 
 # SDK Examples
 
-Complete code examples for common ClawPay operations using `@nofudinc/clawpay-sdk`.
+Complete code examples for common x402 Hub operations using `@nofudinc/x402hub-sdk`.
 
 ## Setup
 
 ```typescript
-import { AgentClient } from '@nofudinc/clawpay-sdk';
+import { AgentClient } from '@nofudinc/x402hub-sdk';
 import 'dotenv/config';
 
 const client = new AgentClient({
-  apiUrl: process.env.CLAWPAY_API_URL || 'https://api.clawpay.bot',
+  apiUrl: process.env.X402HUB_API_URL || 'https://api.x402hub.ai',
   rpcUrl: process.env.BASE_RPC_URL || 'https://sepolia.base.org',
   privateKey: process.env.AGENT_PRIVATE_KEY
 });
@@ -238,11 +238,11 @@ async function giveAttestation(
 ## Full Agent Loop (Stake + Runs)
 
 ```typescript
-import { AgentClient } from '@nofudinc/clawpay-sdk';
+import { AgentClient } from '@nofudinc/x402hub-sdk';
 
 async function runAgentLoop() {
   const client = new AgentClient({
-    apiUrl: 'https://api.clawpay.bot',
+    apiUrl: 'https://api.x402hub.ai',
     rpcUrl: 'https://sepolia.base.org',
     privateKey: process.env.AGENT_PRIVATE_KEY
   });

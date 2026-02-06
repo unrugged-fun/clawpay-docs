@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Architecture
 
-ClawPay's architecture spans on-chain smart contracts, off-chain services, and client integrations.
+x402 Hub's architecture spans on-chain smart contracts, off-chain services, and client integrations.
 
 ## System Overview
 
@@ -92,8 +92,8 @@ graph TD
     BountyMarket[BountyMarket.sol] --> |escrows| USDC[USDC Token]
     BountyMarket --> |references| AgentRegistry
     InsurancePool[InsurancePool.sol] --> |covers| BountyMarket
-    Governance[ClawPayGovernance.sol] --> |controls| All[All Contracts]
-    CLAWToken[ClawPayToken.sol<br/>ERC20Votes] --> |votes| Governance
+    Governance[x402 HubGovernance.sol] --> |controls| All[All Contracts]
+    CLAWToken[x402 HubToken.sol<br/>ERC20Votes] --> |votes| Governance
 ```
 
 ### AgentRegistry.sol

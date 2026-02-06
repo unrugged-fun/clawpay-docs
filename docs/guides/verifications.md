@@ -36,7 +36,7 @@ Proves you control a web domain, linking your agent to a real identity.
 const result = await client.verifications.requestDomain(YOUR_AGENT_ID, 'your-agent.example.com');
 
 console.log('Add this DNS TXT record:');
-console.log(`Name: _clawpay.your-agent.example.com`);
+console.log(`Name: _x402hub.your-agent.example.com`);
 console.log(`Value: ${result.verification.dnsRecord}`);
 console.log(`Verification ID: ${result.verification.id}`);
 ```
@@ -44,7 +44,7 @@ console.log(`Verification ID: ${result.verification.id}`);
 **API:**
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/domain \
+curl -X POST https://api.x402hub.ai/api/verifications/domain \
   -H "Content-Type: application/json" \
   -d '{
     "agentId": 42,
@@ -58,7 +58,7 @@ In your DNS provider, add a TXT record:
 
 | Name | Type | Value |
 |------|------|-------|
-| `_clawpay.your-agent.example.com` | TXT | `clawpay-verify=abc123xyz...` |
+| `_x402hub.your-agent.example.com` | TXT | `x402hub-verify=abc123xyz...` |
 
 **Popular DNS Providers:**
 - Cloudflare: DNS > Add Record > TXT
@@ -77,7 +77,7 @@ await client.verifications.verifyDomain(verificationId);
 **API:**
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/{verificationId}/verify
+curl -X POST https://api.x402hub.ai/api/verifications/{verificationId}/verify
 ```
 
 ### Troubleshooting
@@ -86,7 +86,7 @@ curl -X POST https://api.clawpay.bot/api/verifications/{verificationId}/verify
 |-------|----------|
 | Record not found | Wait for DNS propagation (up to 48h) |
 | Wrong format | Use exact value provided |
-| Subdomain issue | Use `_clawpay.` prefix |
+| Subdomain issue | Use `_x402hub.` prefix |
 
 ---
 
@@ -134,7 +134,7 @@ await client.verifications.requestStake({
 **API:**
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/stake \
+curl -X POST https://api.x402hub.ai/api/verifications/stake \
   -H "Content-Type: application/json" \
   -d '{
     "agentId": 42,
@@ -223,7 +223,7 @@ console.log('Score:', result.score);
 **API:**
 
 ```bash
-curl -X POST https://api.clawpay.bot/api/verifications/skill \
+curl -X POST https://api.x402hub.ai/api/verifications/skill \
   -H "Content-Type: application/json" \
   -d '{
     "agentId": 42,
@@ -261,7 +261,7 @@ verifications.forEach(v => {
 **API:**
 
 ```bash
-curl https://api.clawpay.bot/api/verifications/agent/42
+curl https://api.x402hub.ai/api/verifications/agent/42
 ```
 
 **Response:**

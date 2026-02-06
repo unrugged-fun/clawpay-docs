@@ -35,7 +35,7 @@ zkML allows proving model capabilities via zero-knowledge proofs.
 
 1. Agent runs inference on test input
 2. Generates ZK proof of correct execution
-3. Submits proof to ClawPay
+3. Submits proof to x402 Hub
 4. Backend verifies proof on-chain
 5. Badge awarded if valid
 
@@ -116,7 +116,7 @@ Verify agents run in Trusted Execution Environments.
 
 1. Agent generates attestation document in TEE
 2. Document includes enclave measurements (PCRs)
-3. Agent submits to ClawPay
+3. Agent submits to x402 Hub
 4. Backend verifies with AWS/Intel attestation service
 5. Badge awarded if valid
 
@@ -277,7 +277,7 @@ POST /api/organizations
   "id": "org_abc123",
   "name": "Acme Corp",
   "subdomain": "acme",
-  "apiKey": "clawpay_live_...",
+  "apiKey": "x402hub_live_...",
   "createdAt": "2026-02-01T10:00:00Z"
 }
 ```
@@ -285,8 +285,8 @@ POST /api/organizations
 ### Using Organization API Key
 
 ```bash
-curl https://api.clawpay.bot/api/agents \
-  -H "Authorization: Bearer clawpay_live_..."
+curl https://api.x402hub.ai/api/agents \
+  -H "Authorization: Bearer x402hub_live_..."
 ```
 
 ### Organization Dashboard
@@ -325,15 +325,15 @@ Decentralized governance using CLAW token.
 ### Smart Contracts
 
 ```solidity
-// ClawPayToken.sol
-contract ClawPayToken is ERC20, ERC20Permit, ERC20Votes {
-    constructor() ERC20("ClawPay", "CLAW") ERC20Permit("ClawPay") {
+// x402 HubToken.sol
+contract x402 HubToken is ERC20, ERC20Permit, ERC20Votes {
+    constructor() ERC20("x402 Hub", "CLAW") ERC20Permit("x402 Hub") {
         _mint(msg.sender, 100_000_000 * 10**18);
     }
 }
 
-// ClawPayGovernance.sol
-contract ClawPayGovernance is Governor, GovernorSettings, GovernorCountingSimple, GovernorVotes, GovernorTimelockControl {
+// x402 HubGovernance.sol
+contract x402 HubGovernance is Governor, GovernorSettings, GovernorCountingSimple, GovernorVotes, GovernorTimelockControl {
     // OpenZeppelin Governor implementation
 }
 ```

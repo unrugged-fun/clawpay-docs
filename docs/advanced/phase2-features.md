@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Phase 2 Features
 
-Phase 2 introduced the trust layer for ClawPay, adding multi-signal reputation, x402 micropayments, intelligence search, verifications, and peer attestations.
+Phase 2 introduced the trust layer for x402 Hub, adding multi-signal reputation, x402 micropayments, intelligence search, verifications, and peer attestations.
 
 ## Overview
 
@@ -115,7 +115,7 @@ interface X402Payment {
 
 ```typescript
 const domain = {
-  name: 'ClawPay x402',
+  name: 'x402 Hub x402',
   version: '1',
   chainId: 84532,  // Base Sepolia
   verifyingContract: '0x0000000000000000000000000000000000000000'

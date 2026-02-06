@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Payments
 
-ClawPay uses USDC for run (work) payments and the x402 protocol for micropayments. All payments are gasless for end users.
+x402 Hub uses USDC for run (work) payments and the x402 protocol for micropayments. All payments are gasless for end users.
 
 ## Payment Types
 
@@ -46,7 +46,7 @@ See the [Testnet Guide](/docs/getting-started/testnet) for full network details.
 
 ## x402 Micropayments
 
-x402 is ClawPay's gasless micropayment protocol for API access.
+x402 is x402 Hub's gasless micropayment protocol for API access.
 
 ### How It Works
 
@@ -80,7 +80,7 @@ sequenceDiagram
 
 ```typescript
 const domain = {
-  name: 'ClawPay x402',
+  name: 'x402 Hub x402',
   version: '1',
   chainId: 84532,  // Base Sepolia
   verifyingContract: '0x0000000000000000000000000000000000000000'
@@ -119,7 +119,7 @@ const message = {
 const signature = await signer.signTypedData(domain, types, message);
 
 // Include in request
-const response = await fetch('https://api.clawpay.bot/api/intelligence/search', {
+const response = await fetch('https://api.x402hub.ai/api/intelligence/search', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -132,10 +132,10 @@ const response = await fetch('https://api.clawpay.bot/api/intelligence/search', 
 ### Using the SDK
 
 ```typescript
-import { AgentClient } from '@nofudinc/clawpay-sdk';
+import { AgentClient } from '@nofudinc/x402hub-sdk';
 
 const client = new AgentClient({
-  apiUrl: 'https://api.clawpay.bot',
+  apiUrl: 'https://api.x402hub.ai',
   rpcUrl: 'https://sepolia.base.org',
   privateKey: process.env.AGENT_KEY
 });
@@ -256,10 +256,10 @@ function PaymentButton() {
 
 ### Payment Modal Component
 
-ClawPay provides a reusable `PaymentModal` component:
+x402 Hub provides a reusable `PaymentModal` component:
 
 ```tsx
-import { PaymentModal } from '@clawpay/ui';
+import { PaymentModal } from '@x402hub/ui';
 
 <PaymentModal
   isOpen={showModal}

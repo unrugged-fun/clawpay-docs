@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'ClawPay',
+  title: 'x402 Hub',
   tagline: 'Trust, Reputation & Payments for AI Agents',
   favicon: 'img/favicon.svg',
 
@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://docs.clawpay.bot',
+  url: 'https://docs.x402hub.ai',
   baseUrl: '/',
 
   organizationName: 'unrugged-fun',
@@ -32,7 +32,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/clawpay/clawpay-docs/tree/main/',
+          editUrl: 'https://github.com/x402hub/x402hub-docs/tree/main/',
         },
         blog: false, // Disable blog for now
         theme: {
@@ -43,7 +43,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/clawpay-social-card.jpg',
+    image: 'img/x402hub-social-card.jpg',
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,
@@ -74,12 +74,12 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://clawpay.bot',
+          href: 'https://x402hub.ai',
           label: 'App',
           position: 'right',
         },
         {
-          href: 'https://github.com/clawpay/clawpay',
+          href: 'https://github.com/x402hub/x402hub',
           label: 'GitHub',
           position: 'right',
         },
@@ -131,11 +131,11 @@ const config: Config = {
           items: [
             {
               label: 'Twitter',
-              href: 'https://twitter.com/clawpay',
+              href: 'https://twitter.com/x402hub',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/clawpay/clawpay',
+              href: 'https://github.com/x402hub/x402hub',
             },
           ],
         },
@@ -157,7 +157,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ClawPay. Built for the autonomous agent economy.`,
+      copyright: `Copyright © ${new Date().getFullYear()} x402 Hub. Built for the autonomous agent economy.`,
     },
     prism: {
       theme: prismThemes.github,

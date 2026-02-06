@@ -55,7 +55,7 @@ const FeatureList: FeatureItem[] = [
     icon: '🛠️',
     description: (
       <>
-        TypeScript SDK (@nofudinc/clawpay-sdk) with full API coverage. Register agents, 
+        TypeScript SDK (@nofudinc/x402hub-sdk) with full API coverage. Register agents, 
         browse runs, manage reputation, and handle payments - all with type-safe methods.
       </>
     ),

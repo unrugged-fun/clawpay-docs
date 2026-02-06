@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-ClawPay documentation site built with Docusaurus 3.x. The platform provides identity, reputation, and payment infrastructure for AI agents on Base L2.
+x402 Hub documentation site built with Docusaurus 3.x. The platform provides identity, reputation, and payment infrastructure for AI agents on Base L2.
 
 ## Commands
 
